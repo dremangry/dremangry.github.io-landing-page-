@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>land page exercise</title>
+    <style type="text/css">
+    *{
+        box-sizing: border-box;
+		margin: 0;
+    }
+
+	.page {
+		height: 100vh;
+        width: 100%;
+		background-image: url(https://i.postimg.cc/2yZVb861/cliff.jpg);
+		background-position: center;
+		background-size: cover;
+		position:fixed;
+		padding: 10px;
+	}
+	.header {
+		width: 100%;
+		height: 14vh;
+		margin: auto;
+		display:flex;
+		align-items: center;
+	}
+	nav {
+		flex: auto;
+		padding-left: 60px;
+		text-align: right;
+
+	}
+	 ul li {
+		display: inline-block;
+		list-style: none;
+		margin: 0px 20px;
+	}
+	a {
+		text-decoration: none;
+		color: #111;
+		font-size: 20px;
+		font-family: impact;
+		letter-spacing: 0.1em;
+	}
+	.logo {
+		width: 150px;
+		cursor: pointer;
+		margin: 4px;
+	}
+	.content{
+		width: 100%;
+		position: relative;
+		top: 100px;
+		left: 100px;
+		right: 100px;
+		margin-right: 72%;
+	}
+	h1 {
+		padding-bottom: 20px; 
+		color: #111; font-family: 'Open Sans Condensed', sans-serif; font-size: 64px; font-weight: 700; line-height: 64px;
+	}
+
+	p {
+		margin: 0;
+		width: 500px;
+		padding-top: 20px;
+		font-size: 21px; 
+		font-weight: 600;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	.content .btn {
+		border: 2px solid;
+		border-radius: 20px;
+		padding: 8px;
+		position: relative;
+		top: 30px;
+	}
+	.btn:hover {
+	    background-color: rgba(255, 255, 255, 0.048);
+		border: 2px solid transparent;
+    }
+	 /*midsizes*/
+	 @media screen and (max-width:960px) {
+		 .page {
+			 width: 100%;
+		 }
+		 .header {
+			 width: 100%;
+		 }
+		 .content {
+			 width: 100%;
+		 } 
+		 p {
+			 width: 400px;
+		 }
+		 ul li {
+		     display: block;
+		    margin-bottom: 5px;
+	     }
+		 
+
+	 }
+	 /*mobile*/
+	 @media screen and (max-width:600px) {
+		.page {
+			 width: 100%;
+		 }
+		 .header {
+			 width: 100%;
+		 }
+		 .content {
+			 width: 100%;
+		 } 
+		 p {
+			 width: 300px;
+		 }
+
+	 }
+  
+    </style>
+</head>
+<body>
+	<div class="page">
+		 
+		<div class="header">
+			<img src="https://i.postimg.cc/DZDSwb2V/landpage.png" alt="logo" class="logo">
+		      <nav>
+			  <ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Category</a></li>
+				<li><a href="">Collections</a></li>
+			  </ul>
+		   </nav>
+		</div>
+		<div class="content">
+            <h1>NEVER<br> STOP<br><span style="border-bottom: 3px solid black;">EXPLORING</span></h1>
+                <p>Traveling to a new city or country is always a fun and exciting experience. It helps you know yourself more, as well as open your mind to greater possibilities. When you are traveling, you can take a sip from the culture of the place you are going to and learn various new things. However, as we all know, traveling is not a breeze at times. It is vital that you have an itinerary regarding your destination, so that you can have less time worrying and more time enjoying.</p>
+
+			<a href="#" class="btn">LEARN MORE</a>
+		</div>
+	</div>
+</body>
+</html>
